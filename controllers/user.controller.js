@@ -18,7 +18,7 @@ export const registerUserController = async (req, res) => {
 
         if (!name || !email || !password) {
             return res.status(400).json({ 
-                message: 'Please fill all fields',
+                message: 'Please Fill All Fields',
                 error : true,
                 success : false
             });
@@ -113,7 +113,7 @@ export const loginUserController = async (req, res) => {
 
         if (!email || !password) {
             return res.status(400).json({ 
-                message: 'Please fill all fields',
+                message: 'Please Fill All Fields',
                 error : true,
                 success : false
             });
@@ -458,7 +458,7 @@ export const refreshTokenController = async (req, res) => {
           console.log(refreshToken);
             if(!refreshToken){
                 return res.status(400).json({
-                    message : "Please provide refresh token or Invalid refresh token",
+                    message : "Please provide refresh token",
                     error : true,
                     success : false
                 })
